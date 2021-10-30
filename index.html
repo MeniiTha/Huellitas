@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Huellitas</title>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="./imagenes/logo.png" alt="logo huellitas">
+            <nav>
+                <ul>
+                    <li><a href="#" class="menu-active">Inicio</a></li>
+                    <li><a href="#">Mascotas Perdidas</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+                <button>
+                    <a href="#formulario__registro"> Registrarme</a>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="banner">
+
+            <div class="banner-container">
+                <h2>¡Queremos ayudarte!</h2>
+                <p>Somos la agencia de difusión número 1 de Argentina. La web de mascotas perdidas que genera encuentros felices.
+                    <br>    
+                    <br>
+                    Gracias a la geolocalización, en lo que va del 2021, 1383 mascotas ya se reencontraron con sus dueños. Y seguimos sumando.
+                    <br>
+                    Porque sabemos lo que se siente perder una mascota, hoy estamos juntos en tu búsqueda 🙂
+                </p>
+                <button>¡Quiero iniciar mi alerta ahora!</button>
+            </div>
+            <img src="./imagenes/hombre-perro.png" alt="hombre y perro">
+        </div>
+
+        <div>
+            <div class="encontrados-titulo">
+                <h2>¡Últimos encontrados!</h2>
+                <span>Algúnos reencuentros felices del mes de Octubre</span>
+            </div>
+            <div class="encontrados-grid">
+                <div>
+                    <img src="./imagenes/firulais.jpg" alt="firulais mascota encontrada">
+                    <span>FIRULAIS</span>
+                </div>
+                <div>
+                  <img src="./imagenes//loky.jpg" alt="loky mascota encontrada">
+                  <span>LOKY</span>
+              </div>
+              <!-- <div>
+                  <img src="./imagenes/manchas.jpg" alt="manchas mascota encontrada">
+                  <span>MANCHAS</span>
+              </div>
+              <div>
+                  <img src="./imagenes/pancho.jpg" alt="pancho mascota encontrada">
+                  <span>PANCHO</span>
+              </div>
+            -->
+            </div>
+        </div>
+
+    </div>
+
+    <section class="formulario" id="formulario__registro">
+        <form class="form">
+            <h3 class="form__title">datos personales</h3>
+            <div class="form__container">
+                <div class="form__group">
+                    <label for="name" class="form__label">nombre:</label>
+                    <br>
+                    <input type="text" id="name" class="form__input" placeholder="nombre">
+                </div>
+                <div class="form__group">
+                    <label for="apellido" class="form__label">apellido:</label>
+                    <br>
+                    <input type="text" id="apellido" class="form__input" placeholder="apellido">
+                </div>
+                <div class="form__group">
+                    <label for="date" class="form__label">fecha de nacimiento:</label>
+                    <br>
+                    <input type="date" id="date" class="form__input" placeholder=" ">
+                </div>
+            </div>
+
+            <div class="form__container">
+                <div class="form__group">
+                    <label for="doc" class="form__label">tipo de documento:</label>
+                    <br>
+                    <select name="doc" id="doc">
+                        <option value="dni">dni</option>
+                        <option value="pasaporte">pasaporte</option>
+                        <option value="cédula">cédula</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="number" class="form__label">numero de documento:</label>
+                    <br>
+                    <input type="number" id="dni" class="form__input" placeholder="98765432">
+                </div>
+            </div>
+
+            <h3 class="form__title">datos mascota</h3>
+            <div class="form__container">
+                <div class="form__group">
+                    <label for="name" class="form__label">nombre:</label>
+                    <br>
+                    <input type="text" id="name" class="form__input" placeholder="nombre">
+                </div>
+                <div class="form__group">
+                    <label for="apodo" class="form__label">apodo (opcional):</label>
+                    <br>
+                    <input type="text" id="apodo" class="form__input" placeholder="apodo">
+                </div>
+                <div class="form__group">
+                    <label for="number" class="form__label">edad aproximada:</label>
+                    <br>
+                    <input type="number" id="edad" class="form__input" placeholder="meses">
+                </div>
+            </div>
+
+            <div class="form__container">
+                <div class="form__group">
+                    <span>tipo</span><br>
+                    <input type="radio" name="tipo" id="gato">
+                    <label for="gato">gato</label>
+                    <br>
+                    <input type="radio" name="tipo" id="perro">
+                    <label for="perro">perro</label>
+                </div>
+
+                <div class="form__group">
+                    <span>sexo</span><br>
+                    <input type="radio" name="tipo" id="hembra">
+                    <label for="hembra">hembra</label>
+                    <br>
+                    <input type="radio" name="tipo" id="macho">
+                    <label for="macho">macho</label> 
+                </div>
+                
+            </div>
+
+            <div class="form__container">
+                <div class="form__group">
+                    <label for="descripcion" class="form__label">descripción física:</label>
+                    <br>
+                    <input type="text" id="descripcion" class="form__input" placeholder="500 caracteres">
+                </div>
+                <div class="form__group">
+                    <label for="descripcion" class="form__label">agregar características:</label>
+                    <br>
+                    <input type="text" id="caracteristicas" class="form__input" placeholder="características">
+                </div>
+            </div>
+
+            <div class="form__container form-button">
+                <a href="#"><input type="button" value="volver" id="volver"></a>
+                <a href="#formulario__continuar">continuar ></a>
+            </div>
+        </form>
+    </section>
+    <section class="formulario" id="formulario__continuar">
+        <form class="form form__contenido">
+            <div class="form__cont">
+                <label for="name">nombre de usuario</label>
+                <br>
+                <input type="text" id="name" class="form__input">
+                <br><br>
+                <label for="password">contraseña</label>
+                <br>
+                <input type="password" id="password" class="form__input">
+                <br><br>
+                <label for="password">repetir contraseña</label>
+                <br>
+                <input type="password" id="password" class="form__input">
+                <br><br>
+                <input type="checkbox">
+                <label for="text">acepto términos y condiciones</label>
+            </div>
+
+            <div class="form__container form-button">
+                <a href="#"><input type="button" value="volver" id="volver"></a>
+                <a href="#"><input type="button" value="confirmar" id="confirmar"></a>
+            </div>
+        </form>
+    </section>
+
+
+</body>
+</html>

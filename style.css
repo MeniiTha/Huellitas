@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+a{
+    font-size: 1rem;
+}
+
+.container{
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: #F1A02F;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    list-style: none;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav > ul > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    color: #EF5031;
+}
+
+nav > button {
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: #EF5031;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+nav > button:hover{
+    background-color: #ca462b;
+}
+
+header > div > img{
+    width: 40px;
+}
+
+.menu-active {
+    color: #EF5031;
+    font-weight: bold;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner > img{
+    width: 45%;
+}
+
+.banner-container{
+    width: 380px;
+}
+
+.banner-container > * {
+    padding-top: 20px;
+}
+
+.banner-container > h2 {
+    color: #515151;
+    font-size: 2.6rem;
+}
+
+.banner-container > p{
+    color: #878787;
+    line-height: 25px;
+}
+
+.banner-container > button{
+    background-color: #FFFFFF;
+    border: none;
+    color: #EF5031;
+    font-weight: bold;
+}
+
+
+.encontrados-grid > div {
+    width: 300px;
+    height: 400px;
+}
+
+.encontrados-grid > div > img {
+    width: 100%;
+}
+
+.encontrados-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.encontrados-grid > div {
+    background-color: red;
+}
+
+
+body {
+    background-color: #ddd;
+}
+
+.max__width{
+    position: fixed;
+    width: 100%;
+    z-index: 990;
+}
+.navbar{
+    max-width: 90%;
+    margin: 1rem auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar__items{
+    list-style: none;
+    text-transform: capitalize;
+
+    display: flex;
+}
+
+.navbar__link{
+    margin: 0 1rem;
+}
+
+.navbar__link a{
+    text-decoration: none;
+}
+
+.navbar__registro{
+    display: flex;
+}
+
+.navbar__registro input{
+    padding: .4rem 2rem;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(4, 161, 114);
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.navbar__registro a{
+    text-transform: capitalize;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.home{
+    height: 100vh;
+}
+
+.formulario{
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+.form{
+    background-color: #fff;
+    width: 60%;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.form__title{
+    color: rgb(175, 0, 190);
+    margin: 1rem 2rem;
+    padding: 0 1rem;
+    text-transform: capitalize;
+    border-bottom: 2px solid rgb(175, 0, 190);
+}
+.form__container{
+    width: 85%;
+    margin: 2rem auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__group{
+    flex: 0 0 33.33%;
+}
+
+.form__container #descripcion{
+    height: 5rem;
+}
+.form__container #caracteristicas{
+    height: 5rem;
+}
+
+.form__container.form-button{
+    display: flex;
+    justify-content: space-around;
+}
+
+#volver{
+    width: 7rem;
+    height: 2rem;
+    background-color: rgb(204, 1, 1);
+    color: #fff;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+#confirmar{
+    width: 7rem;
+    height: 2rem;
+    background-color: rgb(43, 1, 197);
+    color: #fff;
+    text-align: center;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.form__contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__cont{
+    margin: 2rem;
+}
+
+.form__cont input{
+    width: 100%;
+}
